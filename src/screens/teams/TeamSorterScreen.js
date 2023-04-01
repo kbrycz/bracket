@@ -28,14 +28,21 @@ const TeamSorterScreen = (props) => {
   };
 
 const handleNumTeamsChange = (text) => {
+  if (!props.route.params.isCreatingBracket && parseInt(text) <= 64) {
+    setNumTeams(text);
+    setTeams([])
+    return;
+  }
   if (parseInt(text) <= 16 || text === '') {
     setNumTeams(text);
+    setTeams([])
   }
 };
 
 const handleNumPlayersChange = (text) => {
   if (parseInt(text) <= 16 || text === '') {
     setNumPlayers(text);
+    setTeams([])
   }
 };
 
@@ -75,10 +82,6 @@ const handleNamesChange = (text) => {
       Alert.alert('Error', 'Please enter valid input');
       return;
     }
-    if (nameList.length > 16) {
-      Alert.alert('Error', 'Maximum number of teams is 16');
-      return;
-    }
 
     const randomizedNames = nameList.sort(() => Math.random() - 0.5);
     let generatedTeams = [];
@@ -100,6 +103,14 @@ const handleNamesChange = (text) => {
       }
     }
 
+    if (generatedTeams.length > 16) {
+      Alert.alert('Error', 'Maximum number of teams is 16');
+    }
+
+    if (generatedTeams.length < 4) {
+      Alert.alert('Error', 'Minimum number of teams is 4');
+    }
+
     setTeams(generatedTeams);
   };
 
@@ -110,7 +121,7 @@ const handleNamesChange = (text) => {
         <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
           <Text style={styles.backButtonText}>&larr; Back</Text>
         </TouchableOpacity>
-        {teams.length > 0 && props.route.params.isCreatingBracket && (
+        {teams.length > 3 && teams.length < 17 && props.route.params.isCreatingBracket && (
           <TouchableOpacity style={styles.readyButton} onPress={handleReady}>
             <Text style={styles.readyButtonText}>Ready</Text>
           </TouchableOpacity>

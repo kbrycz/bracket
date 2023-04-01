@@ -9,6 +9,7 @@ import {
   Keyboard,
   KeyboardAvoidingView,
   Platform,
+  Alert
 } from 'react-native';
 import * as Color from '../../../global/Color';
 import { Dimensions } from 'react-native';
@@ -52,6 +53,16 @@ const TeamPickerScreen = (props) => {
   };
 
   const handleReady = () => {
+
+    if (numTeams > 16) {
+      Alert.alert('Error', 'Maximum number of teams is 16');
+      return;
+    }
+
+    if (numTeams < 4) {
+      Alert.alert('Error', 'Minimum number of teams is 4');
+      return;
+    }
     props.navigation.navigate("Bracket", {teams: teams, isDoubleElimination: props.route.params.isDoubleElimination})
   };
 
