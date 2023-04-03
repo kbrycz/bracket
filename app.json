@@ -6,14 +6,15 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {    
+    "splash": {
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kbrycz2555.brackets"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +27,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "9c5bf7db-f3a5-4754-b626-81d37b79ad3c"
+        "projectId": "be3ee2ab-f2ce-4bc1-aeb2-330fded32ec6"
       }
     }
   }

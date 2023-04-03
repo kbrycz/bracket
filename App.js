@@ -49,9 +49,9 @@ class App extends React.Component {
     await SplashScreenExpo.hideAsync();
 
     // Loads all the images
-    // await Asset.loadAsync([
-    //   require('./assets/main.png'),
-    // ]);
+    await Asset.loadAsync([
+      require('./assets/main.png'),
+    ]);
 
     // Loads all the fonts
     await Font.loadAsync({

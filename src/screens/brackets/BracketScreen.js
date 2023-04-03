@@ -54,6 +54,8 @@ const BracketScreen = (props) => {
   const [imageHeight, setImageHeight] = useState(windowHeight * 0.8);
 
   useEffect(() => {
+    console.log("inside")
+    setIsLoading(true)
     chooseBracketImage();
   }, []);
 
@@ -124,13 +126,14 @@ const BracketScreen = (props) => {
   };
 
   const { teams } = props.route.params;
+  console.log(teams)
   const teamList = teams.map((team, index) => (
     <Text key={index} style={styles.teamTextContainer}>
       <Text style={styles.teamText}>
         Team {index + 1}:{" "}
       </Text>
       <Text style={styles.teamUsersText}>
-        {team.join(', ')} {/* Update this line */}
+        {Array.isArray(team) ? team.join(', ') : team}
       </Text>
     </Text>
   ));
@@ -151,7 +154,7 @@ const BracketScreen = (props) => {
               showsHorizontalScrollIndicator={false}
               showsVerticalScrollIndicator={false}
             >
-              {isLoading ? (
+              {isLoading || bracketImage == null ? (
                 <View style={styles.loadingContainer}>
                   <ActivityIndicator size="large" color={Color.Main} />
                   <Text style={styles.loadingText}>Loading...</Text>

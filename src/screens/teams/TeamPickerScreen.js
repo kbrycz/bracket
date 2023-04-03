@@ -63,6 +63,7 @@ const TeamPickerScreen = (props) => {
       Alert.alert('Error', 'Minimum number of teams is 4');
       return;
     }
+
     props.navigation.navigate("Bracket", {teams: teams, isDoubleElimination: props.route.params.isDoubleElimination})
   };
 

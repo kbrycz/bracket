@@ -17,13 +17,13 @@ const AboutScreen = (props) => {
       <Text style={styles.title}>About</Text>
       <View style={styles.textContainer}>
         <Text style={styles.description}>
-          Welcome to the Bracket Maker and Random Team Generator! This app is designed to help you organize and streamline your tournaments with ease. By simply inputting your teams, you can create either single or double elimination brackets, making it perfect for any competitive setting.
+          Welcome to the Bracket Genie! This app is designed to help you organize and streamline your tournaments with ease. By simply inputting your teams, you can create either single or double elimination brackets, making it perfect for any competitive setting.
         </Text>
         <Text style={styles.description}>
           Additionally, our Random Team Generator feature allows you to create well-balanced teams in just a few clicks. Whether you're planning a friendly get-together or a serious competition, this app has got you covered.
         </Text>
         <Text style={[styles.description, {marginBottom: 0}]}>
-          Say goodbye to tedious tournament planning and let the Bracket Maker and Random Team Generator take care of it for you. Enjoy a seamless experience and focus on what truly matters - the thrill of the game!
+          Say goodbye to tedious tournament planning and let the Bracket Genie take care of it for you. Enjoy a seamless experience and focus on what truly matters - the thrill of the game!
         </Text>
       </View>
       

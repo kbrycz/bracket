@@ -63,7 +63,7 @@ class HomeScreen extends React.Component {
         return (
             <View style={styles.background}>
                 <CircleComponent isWhite={false} />
-                <Text style={styles.headerText}>Bracket and Team Maker</Text>
+                <Text style={styles.headerText}>Bracket Genie</Text>
                 <View>
                     <Image
                         style={styles.image} 
