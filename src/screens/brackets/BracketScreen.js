@@ -26,6 +26,19 @@ import s13 from '../../../assets/s13.png';
 import s14 from '../../../assets/s14.png';
 import s15 from '../../../assets/s15.png';
 import s16 from '../../../assets/s16.png';
+import d4 from '../../../assets/d4.png';
+import d5 from '../../../assets/d5.png';
+import d6 from '../../../assets/d6.png';
+import d7 from '../../../assets/d7.png';
+import d8 from '../../../assets/d8.png';
+import d9 from '../../../assets/d9.png';
+import d10 from '../../../assets/d10.png';
+import d11 from '../../../assets/d11.png';
+import d12 from '../../../assets/d12.png';
+import d13 from '../../../assets/d13.png';
+import d14 from '../../../assets/d14.png';
+import d15 from '../../../assets/d15.png';
+import d16 from '../../../assets/d16.png';
 import * as Color from '../../../global/Color';
 
 const windowHeight = Dimensions.get('window').height;
@@ -56,7 +69,8 @@ const BracketScreen = (props) => {
     imageName += teamCount;
 
     const images = {
-      s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16
+      s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16,
+      d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16
     };
 
     let image = images[imageName]
