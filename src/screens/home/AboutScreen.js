@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   backButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
   },
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     padding: Dimensions.get('window').height * 0.03
   },
   title: {
-    fontSize: Dimensions.get('window').width * 0.075,
+    fontSize: Dimensions.get('window').height * 0.035,
     fontWeight: 'bold',
     fontFamily: 'BalsamiqSans',
     marginBottom: Dimensions.get('window').height * 0.02,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   description: {
-    fontSize: Dimensions.get('window').width * 0.04,
+    fontSize: Dimensions.get('window').height * 0.018,
     fontFamily: 'BalsamiqSans',
     color: Color.Main,
     textAlign: 'justify',

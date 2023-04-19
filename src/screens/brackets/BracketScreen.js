@@ -232,7 +232,7 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   backButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
   },
@@ -256,8 +256,8 @@ const styles = StyleSheet.create({
   infoButton: {
     backgroundColor: Color.Main,
     borderRadius: Dimensions.get('window').width * 0.15,
-    width: Dimensions.get('window').width * 0.15,
-    height: Dimensions.get('window').width * 0.15,
+    width: Dimensions.get('window').height * 0.07,
+    height: Dimensions.get('window').height * 0.07,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   },
   infoButtonText: {
     color: Color.White,
-    fontSize: Dimensions.get('window').width * 0.075,
+    fontSize: Dimensions.get('window').height * 0.035,
     fontFamily: 'BalsamiqSans',
   },
   modalContainer: {

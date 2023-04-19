@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   backButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
   },
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   randomTeamsButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.025,
     color: '#ffffff',
     fontFamily: 'BalsamiqSans',
   },
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   createTeamsButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.025,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
   },
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     marginTop: Dimensions.get('window').height * .03,
   },
   eliminationToggleText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
     marginRight: 10,

@@ -127,12 +127,13 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   backButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: Color.Main,
     fontFamily: 'BalsamiqSans',
   },
   title: {
-    fontSize: Dimensions.get('window').width * 0.075,
+    marginTop: Dimensions.get('window').height * 0.02,
+    fontSize: Dimensions.get('window').height * 0.045,
     fontWeight: 'bold',
     fontFamily: 'BalsamiqSans',
     marginBottom: Dimensions.get('window').height * 0.025,
@@ -140,13 +141,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   subtitle: {
-    fontSize: Dimensions.get('window').width * 0.04,
+    fontSize: Dimensions.get('window').height * 0.02,
     fontFamily: 'BalsamiqSans',
     marginBottom: Dimensions.get('window').height * 0.025,
     color: Color.Main,
   },
   numTeamsInput: {
-    height: 40,
+    height: Dimensions.get('window').height * 0.04,
+    fontSize: Dimensions.get('window').height * 0.018,
     borderColor: Color.InputBorder,
     borderWidth: 1,
     borderRadius: 10,
@@ -162,6 +164,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
+    fontSize: Dimensions.get('window').height * 0.015,
     borderColor: Color.InputBorder,
     borderWidth: 1,
     borderRadius: 10,
@@ -191,7 +194,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   teamTitle: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     fontWeight: 'bold',
     fontFamily: 'BalsamiqSans',
     marginBottom: 10,
@@ -209,7 +212,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   readyButtonText: {
-    fontSize: Dimensions.get('window').width * 0.045,
+    fontSize: Dimensions.get('window').height * 0.02,
     color: '#ffffff',
     fontFamily: 'BalsamiqSans',
   },

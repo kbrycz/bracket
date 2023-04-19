@@ -19,25 +19,25 @@ class HomeScreen extends React.Component {
     // TODO need to update this to new link
     shareButton = async () => {
         console.log("share")
-        // try {
-        //     const result = await Share.share({
-        //         url: 'pp&af_js_web=true',
-        //     });
+        try {
+            const result = await Share.share({
+                url: 'https://apps.apple.com/us/app/bracket-genie-all-in-one/id6447208239',
+            });
 
-        // } 
-        // catch (error) {
-        //     this.setState({
-        //         text: 'Unable to share app. Please try again!',
-        //         modalVisible: true,
-        //     })
-        // }
+        } 
+        catch (error) {
+            this.setState({
+                text: 'Unable to share app. Please try again!',
+                modalVisible: true,
+            })
+        }
     }
 
     // Sends the user to the app store to rate the app
     // TODO need to update this to new link
     rateApp = async () => {
         console.log("rate app")
-        // Linking.openURL('https://apps.apple.com/us/app/celsius-safe-crypto-platform/id1387885523');
+        Linking.openURL('https://apps.apple.com/us/app/bracket-genie-all-in-one/id6447208239');
     }
 
     // Head to the about screen
